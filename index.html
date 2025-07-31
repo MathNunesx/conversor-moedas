@@ -12,26 +12,25 @@
 
     <div class="container">
 
-        <div class="box">
-
-         <input type="number" id="amount" placeholder="Valor">
-
-    <select id="firstHolder">
-      <option value="BRL">BRL</option>
-      <option value="USD">USD</option>
-      <option value="EUR">EUR</option>
-    </select>
-
-    <span id="icon"> # </span>
-
-    <select id="secondHolder">
+    <label for="from">De:</label>
+      <select class="selector">
         <option value="USD">USD</option>
         <option value="BRL">BRL</option>
         <option value="EUR">EUR</option>
-    </select>
+      </select>
 
-    <button id="btn"> Converter </button>
-        </div>
+      <label for="to">Para:</label>
+      <select class="selector">
+        <option value="BRL">BRL</option>
+        <option value="USD">USD</option>
+        <option value="EUR">EUR</option>
+      </select>
+
+      <label for="amount">Valor:</label>
+      <input type="number" id="amount" placeholder="Digite o valor" />
+
+      <button id="convert"> Converter Agora</button>
+
     </div>
     
 </body>
